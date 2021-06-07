@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% comment %} {% load static %}  {% endcomment %}
+{% block content %}
+	<style>
+		.btn{
+				background-color: white;
+				border: 2px solid grey;
+				color: black;
+				padding: 5px 10px;
+				display: inline-block;
+				font-size: 20px;
+				margin: 10px 30px;
+				cursor: pointer;
+			}
+		.center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100px;
+			}	
+	</style>
+	<div class="center">
+	<h3>Run streamlit cmd to predict stock</h3>
+	<a href="http://localhost:8501"><button class="btn">Click Here to Predict Stocks</button></a>OR CLICK
+	<a href="http://192.168.43.72:8501"><button class="btn">Click Here to Predict Stocks</button></a>
+	</div>
+	
+{% endblock %}
