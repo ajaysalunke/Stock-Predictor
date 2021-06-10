@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+	<style>
+		.btn{
+				background-color: white;
+				border: 2px solid grey;
+				color: black;
+				padding: 5px 10px;
+				display: inline-block;
+				font-size: 20px;
+				margin: 10px 30px;
+				cursor: pointer;
+			}
+		.center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100px;
+			}	
+	</style>
+	<div class="center">
+	<a href="https://streamlit-predict-app.herokuapp.com/"><button class="btn">Click Here to Predict Stocks</button></a>
+	</div>
+	
+{% endblock %}
